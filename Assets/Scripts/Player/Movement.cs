@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private FixedJoystick joystick;
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponentInParent<Rigidbody>();
     }
     void Update()
     {

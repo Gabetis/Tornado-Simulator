@@ -8,6 +8,6 @@ public class PlayerCamera : MonoBehaviour
 
     private void Update()
     {
-        transform.position = playerTransform.position + offset;
+        transform.position = playerTransform.position + offset; 
     }
 }

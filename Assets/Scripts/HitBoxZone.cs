@@ -16,13 +16,15 @@ public class HitBoxZone : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         playerTransform = other.transform;
+        Vector3 direction = (playerTransform.position - transform.position).normalized;
+        rb.MovePosition(transform.position + direction * Time.deltaTime);
     }
 
     private void FixedUpdate()
     {
         if (playerTransform != null)
         {
-            Vector3 direction = (playerTransform.position- transform.position).normalized;
+            Vector3 direction = (playerTransform.position - transform.position).normalized;
             rb.MovePosition(transform.position + direction * Time.deltaTime);
         }
     }
