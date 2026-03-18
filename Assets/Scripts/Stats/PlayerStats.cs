@@ -8,7 +8,7 @@ public class PlayerStats
     public int suctionRadius { get; private set; } = 5;
     public int maxSize { get; private set; } = 10;
     public int currentSize { get; private set; } = 1;
-    public int sizeMultiplier { get; private set; } = 1;
+    public float sizeMultiplier { get; private set; } = 0.1f;
     public int Gold { get; private set; } = 0;
     public int goldMultiplier { get; private set; } = 1;
 

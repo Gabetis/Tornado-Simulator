@@ -11,10 +11,11 @@ public class PlayerHitBox : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collision)
     {
-        if(collision.gameObject.layer != 3)
+        if (collision.gameObject.layer != 3)
         {
             collision.gameObject.SetActive(false);
             playerManager.Stats.IncreaseCurrentSize(1);
+            playerManager.transform.localScale = Vector3.one * (1 + playerManager.Stats.sizeMultiplier * playerManager.Stats.currentSize);
         }
     }
 
@@ -41,7 +42,7 @@ public class PlayerHitBox : MonoBehaviour
             float distance = Vector3.Distance(pos, center);
             float spin = Mathf.Clamp(1f / distance, 0.5f, 2f);
 
-            Vector3 finalDir = (dir * 0.2f + tangent * spin).normalized;
+            Vector3 finalDir = (dir * 0.3f + tangent * spin).normalized;
 
             hit.transform.position += finalDir * playerManager.Stats.Suction * Time.deltaTime;
         }
