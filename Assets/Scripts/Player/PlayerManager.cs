@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public GameObject Visual;
-    public GameObject Zone;
+    public GameObject HitBox;
     public GameObject Movement;
     public PlayerStats Stats { get; private set; } = new PlayerStats();
     private void Start()
@@ -13,9 +13,9 @@ public class PlayerManager : MonoBehaviour
             Visual = transform.Find("Visual").gameObject;
         }
 
-        if (Zone == null)
+        if (HitBox == null)
         {
-            Zone = transform.Find("Zone").gameObject;
+            HitBox = transform.Find("HitBox").gameObject;
         }
 
         if(Movement == null)

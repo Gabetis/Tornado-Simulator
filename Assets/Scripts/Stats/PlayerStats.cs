@@ -4,7 +4,7 @@ public class PlayerStats
 {
     public int currentMoveSpeed { get; private set; } = 1;
     public int maxMoveSpeed { get; private set; } = 5;
-    public int Suction { get; private set; } = 1;
+    public int Suction { get; private set; } = 5;
     public int suctionRadius { get; private set; } = 5;
     public int maxSize { get; private set; } = 10;
     public int currentSize { get; private set; } = 1;
