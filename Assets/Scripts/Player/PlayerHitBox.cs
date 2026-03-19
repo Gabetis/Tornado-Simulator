@@ -4,7 +4,6 @@ public class PlayerHitBox : MonoBehaviour
 {
     private PlayerManager playerManager;
 
-
     private void Start()
     {
         playerManager = GetComponentInParent<PlayerManager>();
@@ -14,8 +13,9 @@ public class PlayerHitBox : MonoBehaviour
         if (collision.gameObject.layer != 3)
         {
             collision.gameObject.SetActive(false);
-            playerManager.Stats.IncreaseCurrentSize(1);
+            playerManager.Stats.IncreaseCurrentSizeStore(1);
             playerManager.transform.localScale = Vector3.one * (1 + playerManager.Stats.sizeMultiplier * playerManager.Stats.currentSize);
+            GameEvent.OnUpdateFill();
         }
     }
 

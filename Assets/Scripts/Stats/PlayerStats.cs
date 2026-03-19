@@ -8,19 +8,20 @@ public class PlayerStats
     public int suctionRadius { get; private set; } = 5;
     public int maxSize { get; private set; } = 10;
     public int currentSize { get; private set; } = 1;
+    public int currentSizeStore { get; private set; } = 0;
     public float sizeMultiplier { get; private set; } = 0.1f;
     public int Gold { get; private set; } = 0;
     public int goldMultiplier { get; private set; } = 1;
 
-    public void IncreaseCurrentSize(int amount)
+    public void IncreaseCurrentSizeStore(int amount)
     {
-        if(currentSize < maxSize)
+        if(currentSizeStore < maxSize)
         {
-            currentSize += amount;
-            Debug.Log("Current Size after increase: " + currentSize);
-            if(currentSize > maxSize)
+            currentSizeStore += amount;
+            Debug.Log("Current Size Store after increase: " + currentSizeStore);
+            if(currentSizeStore > maxSize)
             {
-                currentSize = maxSize;
+                currentSizeStore = maxSize;
             }
         }
         else

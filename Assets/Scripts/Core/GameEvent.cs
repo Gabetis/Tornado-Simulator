@@ -2,6 +2,6 @@ using UnityEngine;
 using System;
 public static class GameEvent 
 {
-    public static Action<int> OnAddMoney;
-    public static void AddMoney(int amount) => OnAddMoney?.Invoke(amount);
+    public static Action OnUpdateFill;
+    public static void UpdateFill() => OnUpdateFill?.Invoke();
 }
