@@ -9,6 +9,9 @@ public class Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponentInParent<Rigidbody>();
+        rb.constraints = RigidbodyConstraints.FreezePositionY;
+        rb.constraints = RigidbodyConstraints.FreezeRotation;
+        rb.useGravity = false;
     }
     void Update()
     {

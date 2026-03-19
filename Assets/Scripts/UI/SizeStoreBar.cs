@@ -6,6 +6,11 @@ public class SizeStoreBar : MonoBehaviour
     [SerializeField] private Image sizeBarFill;
     [SerializeField] private PlayerManager playerManager;
 
+    private void OnEnable()
+    {
+        GameEvent.OnUpdateFill += GetCurrentFill;
+    }
+
     private void Start()
     {
         if(playerManager == null)
@@ -17,8 +22,6 @@ public class SizeStoreBar : MonoBehaviour
         {
             sizeBarFill = transform.Find("BG/Fill").GetComponent<Image>();
         }
-
-        GameEvent.OnUpdateFill += GetCurrentFill;
     }
 
     private void GetCurrentFill()

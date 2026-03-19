@@ -14,8 +14,9 @@ public class PlayerHitBox : MonoBehaviour
         {
             collision.gameObject.SetActive(false);
             playerManager.Stats.IncreaseCurrentSizeStore(1);
-            playerManager.transform.localScale = Vector3.one * (1 + playerManager.Stats.sizeMultiplier * playerManager.Stats.currentSize);
+            playerManager.transform.localScale = Vector3.one * (1 + playerManager.Stats.sizeMultiplier * playerManager.Stats.currentSize); //Increase real size
             GameEvent.OnUpdateFill();
+            GameEvent.UpdateSizeText(playerManager.Stats.currentSizeStore, playerManager.Stats.maxSize);
         }
     }
 
