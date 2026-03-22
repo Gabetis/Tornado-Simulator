@@ -8,6 +8,7 @@ public class BarValueText : MonoBehaviour
     private void OnEnable()
     {
         GameEvent.OnUpdateSizeText += UpdateSizeText;
+        GameEvent.OnResetSizeText += ResetSizeText;
     }
 
     private void Awake()
@@ -29,8 +30,14 @@ public class BarValueText : MonoBehaviour
         MaxSizeText.text = maxSize.ToString();
     }
 
+    public void ResetSizeText()
+    {
+        currentSizeStoreText.text = "0";
+    }
+
     private void OnDisable()
     {
         GameEvent.OnUpdateSizeText -= UpdateSizeText;
+        GameEvent.OnResetSizeText -= ResetSizeText;
     }
 }

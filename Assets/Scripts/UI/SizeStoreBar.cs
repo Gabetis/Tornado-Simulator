@@ -9,15 +9,11 @@ public class SizeStoreBar : MonoBehaviour
     private void OnEnable()
     {
         GameEvent.OnUpdateFill += GetCurrentFill;
+        GameEvent.OnResetFill += ResetFill;
     }
 
     private void Start()
     {
-        if(playerManager == null)
-        {
-
-        }
-
         if(sizeBarFill == null)
         {
             sizeBarFill = transform.Find("BG/Fill").GetComponent<Image>();
@@ -28,6 +24,12 @@ public class SizeStoreBar : MonoBehaviour
     {
         float fillAmount = (float)playerManager.Stats.currentSizeStore / (float)playerManager.Stats.maxSize;
         sizeBarFill.fillAmount = fillAmount;
+    }
+
+    public void ResetFill()
+    {
+        sizeBarFill.fillAmount = 0f;
+        playerManager.Stats.ResetCurrentSizeStore();
     }
 
     private void OnDisable()

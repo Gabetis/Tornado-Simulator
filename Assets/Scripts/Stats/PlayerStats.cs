@@ -18,13 +18,22 @@ public class PlayerStats
         if(currentSizeStore < maxSize)
         {
             currentSizeStore += amount;
-            Debug.Log("Current Size Store after increase: " + currentSizeStore);
-            if(currentSizeStore > maxSize)
+            if (currentSizeStore > maxSize)
             {
                 currentSizeStore = maxSize;
             }
         }
         else
             Debug.Log("Player is already at max size.");
+    }
+
+    public void ResetCurrentSizeStore()
+    {
+        currentSizeStore = 0;
+    }
+
+    public void AddGold(int amount)
+    {
+        Gold = (Gold + amount) * goldMultiplier;
     }
 }
