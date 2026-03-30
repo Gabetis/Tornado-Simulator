@@ -10,7 +10,7 @@ public class PlayerStats
     public int currentSize { get; private set; } = 1;
     public int currentSizeStore { get; private set; } = 0;
     public float sizeMultiplier { get; private set; } = 0.1f;
-    public int Gold { get; private set; } = 0;
+    public int Gold { get; private set; } = 1000000;
     public int goldMultiplier { get; private set; } = 1;
 
     public void IncreaseCurrentSizeStore(int amount)
@@ -32,8 +32,25 @@ public class PlayerStats
         currentSizeStore = 0;
     }
 
+    public void SetMaxSize(int newMaxSize)
+    {
+        maxSize = newMaxSize;
+    }   
+
     public void AddGold(int amount)
     {
-        Gold = (Gold + amount) * goldMultiplier;
+        Gold = Gold + amount * goldMultiplier;
+    }
+
+    public void SpendGold(int amount)
+    {
+        if (Gold >= amount)
+        {
+            Gold -= amount;
+        }
+        else
+        {
+            Debug.Log("Not enough gold to spend.");
+        }
     }
 }
