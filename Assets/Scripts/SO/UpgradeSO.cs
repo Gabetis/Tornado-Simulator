@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "UpgradeData", menuName = "Scriptable Objects/UpgradeData")]
-public class UpgradeData : ScriptableObject
+public class UpgradeSO : ScriptableObject
 {
     [Header("MaxSize")]
     public int baseMaxSize = 100;
@@ -76,4 +76,11 @@ public class UpgradeData : ScriptableObject
     {
         return 1 + sizeMultiplierAmplitude * Mathf.Pow(level, sizeMultiplierCoefficient);
     }
+}
+
+public enum UpgradeType
+{
+    MaxSize,
+    GoldMultiplier,
+    MoveSpeed
 }

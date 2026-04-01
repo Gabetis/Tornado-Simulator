@@ -12,4 +12,10 @@ public static class GameEvent
     public static void ResetSizeText() => OnResetSizeText?.Invoke();
     public static Action<int> OnUpdateGoldText;
     public static void UpdateGoldText(int goldAmount) => OnUpdateGoldText?.Invoke(goldAmount);
+    public static Action<UpgradeType> OnUpdateUpgradeLevelUI;
+    public static void UpdateUpgradeLevelUI(UpgradeType upgradeType) => OnUpdateUpgradeLevelUI?.Invoke(upgradeType);
+    public static Action<int> OnUpdateMaxSizeText;
+    public static void UpdateMaxSizeText(int maxSize) => OnUpdateMaxSizeText?.Invoke(maxSize);
+    public static Action<UpgradeType> OnUpdateUpgradeCostUI;
+    public static void UpdateUpgradeCostUI(UpgradeType type) => OnUpdateUpgradeCostUI?.Invoke(type);
 }

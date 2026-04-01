@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerStats
 {
-    public int currentMoveSpeed { get; private set; } = 1;
+    public float currentMoveSpeed { get; private set; } = 1;
     public int maxMoveSpeed { get; private set; } = 5;
     public int Suction { get; private set; } = 5;
     public int suctionRadius { get; private set; } = 5;
@@ -37,9 +37,21 @@ public class PlayerStats
         maxSize = newMaxSize;
     }   
 
+    public void SetMoveSpeed(float newMoveSpeed)
+    {
+        currentMoveSpeed = newMoveSpeed;
+    }
+
+    public void SetGoldMultiplier(int newGoldMultiplier)
+    {
+        goldMultiplier = newGoldMultiplier;
+    }   
+
     public void AddGold(int amount)
     {
         Gold = Gold + amount * goldMultiplier;
+        Debug.Log("Added " + amount * goldMultiplier + " gold. Total gold: " + Gold);
+        Debug.Log("Current gold multiplier: " + goldMultiplier);
     }
 
     public void SpendGold(int amount)

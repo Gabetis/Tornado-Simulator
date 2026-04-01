@@ -4,6 +4,7 @@ public class UpgradeButton : MonoBehaviour
 {
     [SerializeField] private Button button; 
     [SerializeField] private UpgradeSystem upgradeSystem;
+    [SerializeField] private UpgradeType upgradeType;
 
 
     private void Awake()
@@ -21,6 +22,6 @@ public class UpgradeButton : MonoBehaviour
 
     public void OnButtonClicked()
     {
-        upgradeSystem.UpgradeMaxSize();
+        upgradeSystem.Upgrade(upgradeType);
     }
 }

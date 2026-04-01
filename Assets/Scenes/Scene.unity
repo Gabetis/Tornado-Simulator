@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1188,7 +1188,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1325,7 +1325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1464,7 +1464,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1601,7 +1601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1854,8 +1854,9 @@ GameObject:
   - component: {fileID: 438603206}
   - component: {fileID: 438603205}
   - component: {fileID: 438603204}
+  - component: {fileID: 438603207}
   m_Layer: 5
-  m_Name: Button
+  m_Name: UpgradeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1963,6 +1964,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438603202}
   m_CullTransparentMesh: 1
+--- !u!114 &438603207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438603202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af974498bb9d9cd44bddd9ba738b035c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
+  button: {fileID: 0}
+  upgradeSystem: {fileID: 480926023}
+  upgradeType: 1
 --- !u!1 &446030996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2014,7 +2030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2109,7 +2125,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 450460598}
-  - component: {fileID: 450460599}
   m_Layer: 5
   m_Name: MaxSizeUpgradeDisplay
   m_TagString: Untagged
@@ -2139,20 +2154,6 @@ RectTransform:
   m_AnchoredPosition: {x: -100, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &450460599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 450460597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af974498bb9d9cd44bddd9ba738b035c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
-  button: {fileID: 0}
-  upgradeSystem: {fileID: 480926023}
 --- !u!1 &480926022
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,6 +2212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 536885062}
+  - component: {fileID: 536885063}
   m_Layer: 5
   m_Name: LevelDisplay
   m_TagString: Untagged
@@ -2239,6 +2241,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -4.400014}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &536885063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536885061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b28193d53b9e8740bef28429df49e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowLevelUpgradeUI
+  text: {fileID: 0}
+  upgradeType: 1
+  upgradeSystem: {fileID: 480926023}
 --- !u!1 &568077626
 GameObject:
   m_ObjectHideFlags: 0
@@ -2365,7 +2382,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2595,6 +2612,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 642494296}
+  - component: {fileID: 642494297}
   m_Layer: 5
   m_Name: GoldDisplay
   m_TagString: Untagged
@@ -2622,6 +2640,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0.9, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &642494297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642494295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: badf855b4c22b3347b6296c0bb0b0490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowUpgradeCostUI
+  upgradeCostText: {fileID: 0}
+  upgradeSystem: {fileID: 480926023}
+  upgradeType: 2
 --- !u!1 &678444058
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,6 +2867,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 780556488}
+  - component: {fileID: 780556489}
   m_Layer: 5
   m_Name: LevelDisplay
   m_TagString: Untagged
@@ -2862,6 +2896,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -4.4}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &780556489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780556487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b28193d53b9e8740bef28429df49e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowLevelUpgradeUI
+  text: {fileID: 0}
+  upgradeType: 0
+  upgradeSystem: {fileID: 480926023}
 --- !u!1 &889326715
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,6 +3088,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 959358473}
+  - component: {fileID: 959358474}
   m_Layer: 5
   m_Name: GoldDisplay
   m_TagString: Untagged
@@ -3066,6 +3116,21 @@ RectTransform:
   m_AnchoredPosition: {x: -200.00006, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &959358474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959358472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: badf855b4c22b3347b6296c0bb0b0490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowUpgradeCostUI
+  upgradeCostText: {fileID: 0}
+  upgradeSystem: {fileID: 480926023}
+  upgradeType: 1
 --- !u!1 &1015020005
 GameObject:
   m_ObjectHideFlags: 0
@@ -3153,8 +3218,9 @@ GameObject:
   - component: {fileID: 1021170310}
   - component: {fileID: 1021170309}
   - component: {fileID: 1021170308}
+  - component: {fileID: 1021170311}
   m_Layer: 5
-  m_Name: Button
+  m_Name: UpgradeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3262,6 +3328,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021170306}
   m_CullTransparentMesh: 1
+--- !u!114 &1021170311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021170306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af974498bb9d9cd44bddd9ba738b035c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
+  button: {fileID: 0}
+  upgradeSystem: {fileID: 480926023}
+  upgradeType: 2
 --- !u!1 &1033814799
 GameObject:
   m_ObjectHideFlags: 0
@@ -3707,8 +3788,9 @@ GameObject:
   - component: {fileID: 1220733425}
   - component: {fileID: 1220733424}
   - component: {fileID: 1220733423}
+  - component: {fileID: 1220733426}
   m_Layer: 5
-  m_Name: Button
+  m_Name: UpgradeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3816,6 +3898,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1220733421}
   m_CullTransparentMesh: 1
+--- !u!114 &1220733426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220733421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af974498bb9d9cd44bddd9ba738b035c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UpgradeButton
+  button: {fileID: 0}
+  upgradeSystem: {fileID: 480926023}
+  upgradeType: 0
 --- !u!1 &1222625188
 GameObject:
   m_ObjectHideFlags: 0
@@ -3998,7 +4095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4135,7 +4232,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -4271,6 +4368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1431069743}
+  - component: {fileID: 1431069744}
   m_Layer: 5
   m_Name: GoldDisplay
   m_TagString: Untagged
@@ -4298,6 +4396,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1431069744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1431069742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: badf855b4c22b3347b6296c0bb0b0490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowUpgradeCostUI
+  upgradeCostText: {fileID: 0}
+  upgradeSystem: {fileID: 480926023}
+  upgradeType: 0
 --- !u!1 &1456280742
 GameObject:
   m_ObjectHideFlags: 0
@@ -4349,7 +4462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5327,6 +5440,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1780040561}
+  - component: {fileID: 1780040562}
   m_Layer: 5
   m_Name: LevelDisplay
   m_TagString: Untagged
@@ -5355,6 +5469,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -4.400014}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1780040562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1780040560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b28193d53b9e8740bef28429df49e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowLevelUpgradeUI
+  text: {fileID: 0}
+  upgradeType: 2
+  upgradeSystem: {fileID: 480926023}
 --- !u!1 &1783631197
 GameObject:
   m_ObjectHideFlags: 0
@@ -5406,7 +5535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5543,7 +5672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -5733,7 +5862,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
