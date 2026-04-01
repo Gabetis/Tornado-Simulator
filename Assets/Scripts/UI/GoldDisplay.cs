@@ -11,10 +11,15 @@ public class GoldDisplay : MonoBehaviour
 
     private void Awake()
     {
-        if(goldText == null)
+        if (goldText == null)
         {
             goldText = GetComponentInChildren<TextMeshProUGUI>();
         }
+    }
+
+    private void Start()
+    {
+        UpdateText(PlayerManager.Instance.Stats.Gold);
     }
 
     private void UpdateText(int goldAmount)

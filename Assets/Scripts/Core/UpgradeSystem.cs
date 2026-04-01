@@ -3,7 +3,6 @@ using TMPro;
 public class UpgradeSystem : MonoBehaviour
 {
     [SerializeField] private UpgradeSO upgradeData;
-    [SerializeField] private PlayerManager playerManager;
 
     [SerializeField] private int maxSizeLevel = 0;
     [SerializeField] private int goldMultiplierLevel = 0;
@@ -15,16 +14,16 @@ public class UpgradeSystem : MonoBehaviour
         {
             case UpgradeType.MaxSize:
                 int maxSizeCost = upgradeData.GetMaxSizeCost(maxSizeLevel);
-                if (playerManager.Stats.Gold >= maxSizeCost)
+                if (PlayerManager.Instance.Stats.Gold >= maxSizeCost)
                 {
-                    playerManager.Stats.SpendGold(maxSizeCost);
+                    PlayerManager.Instance.Stats.SpendGold(maxSizeCost);
                     maxSizeLevel++;
 
                     int value = upgradeData.GetMaxSizeValue(maxSizeLevel);
-                    playerManager.Stats.SetMaxSize(value);
+                    PlayerManager.Instance.Stats.SetMaxSize(value);
 
-                    GameEvent.UpdateGoldText(playerManager.Stats.Gold);
-                    GameEvent.UpdateMaxSizeText(playerManager.Stats.maxSize);
+                    GameEvent.UpdateGoldText(PlayerManager.Instance.Stats.Gold);
+                    GameEvent.UpdateMaxSizeText(PlayerManager.Instance.Stats.maxSize);
                     GameEvent.UpdateUpgradeLevelUI(upgradeType);
                     GameEvent.UpdateUpgradeCostUI(upgradeType);
                 }
@@ -35,15 +34,15 @@ public class UpgradeSystem : MonoBehaviour
                 break;
             case UpgradeType.MoveSpeed:
                 int moveSpeedCost = upgradeData.GetMoveSpeedCost(moveSpeedLevel);
-                if (playerManager.Stats.Gold >= moveSpeedCost)
+                if (PlayerManager.Instance.Stats.Gold >= moveSpeedCost)
                 {
-                    playerManager.Stats.SpendGold(moveSpeedCost);
+                    PlayerManager.Instance.Stats.SpendGold(moveSpeedCost);
                     moveSpeedLevel++;
 
                     float value = upgradeData.GetMoveSpeedValue(moveSpeedLevel);
-                    playerManager.Stats.SetMoveSpeed(value);
+                    PlayerManager.Instance.Stats.SetMoveSpeed(value);
 
-                    GameEvent.UpdateGoldText(playerManager.Stats.Gold);
+                    GameEvent.UpdateGoldText(PlayerManager.Instance.Stats.Gold);
                     GameEvent.UpdateUpgradeLevelUI(upgradeType);
                     GameEvent.UpdateUpgradeCostUI(upgradeType);
                     Debug.Log("Move Speed upgraded to level " + moveSpeedLevel + " with value " + value);
@@ -56,15 +55,15 @@ public class UpgradeSystem : MonoBehaviour
                 break;
             case UpgradeType.GoldMultiplier:
                 int goldMultiplierCost = upgradeData.GetGoldMultiplierCost(goldMultiplierLevel);
-                if (playerManager.Stats.Gold >= goldMultiplierCost)
+                if (    PlayerManager.Instance.Stats.Gold >= goldMultiplierCost)
                 {
-                    playerManager.Stats.SpendGold(goldMultiplierCost);
+                    PlayerManager.Instance.Stats.SpendGold(goldMultiplierCost);
                     goldMultiplierLevel++;
 
                     int value = Mathf.RoundToInt(upgradeData.GetGoldMultiplierValue(goldMultiplierLevel));
-                    playerManager.Stats.SetGoldMultiplier(value);
+                        PlayerManager.Instance.Stats.SetGoldMultiplier(value);
 
-                    GameEvent.UpdateGoldText(playerManager.Stats.Gold);
+                    GameEvent.UpdateGoldText(PlayerManager.Instance.Stats.Gold);
                     GameEvent.UpdateUpgradeLevelUI(upgradeType);
                     GameEvent.UpdateUpgradeCostUI(upgradeType);
                     Debug.Log("Gold Multiplier upgraded to level " + goldMultiplierLevel + " with value " + value);
