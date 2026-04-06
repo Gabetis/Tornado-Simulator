@@ -1,8 +1,9 @@
 using UnityEngine;
-
+using System.Collections.Generic;
 public class PlayerHitBox : MonoBehaviour
 {
     private PlayerManager playerManager;
+    [SerializeField] private List<Transform> pulledObjects = new List<Transform>();
 
     private void Awake()
     {
@@ -17,6 +18,7 @@ public class PlayerHitBox : MonoBehaviour
             playerManager.transform.localScale = Vector3.one * (1 + playerManager.Stats.sizeMultiplier * playerManager.Stats.currentSize); //Increase real size
             GameEvent.OnUpdateFill();
             GameEvent.UpdateSizeText(playerManager.Stats.currentSizeStore, playerManager.Stats.maxSize);
+            pulledObjects.Remove(collision.transform);
         }
     }
 
@@ -31,8 +33,19 @@ public class PlayerHitBox : MonoBehaviour
     {
         var hits = Physics.OverlapSphere(transform.position, playerManager.Stats.suctionRadius, LayerMask.GetMask("PullAble"));
 
+        // Add new hits to the list of pulled objects
         foreach (var hit in hits)
         {
+            if (!pulledObjects.Contains(hit.transform))
+            {
+                pulledObjects.Add(hit.transform);
+            }
+        }
+
+        foreach (var hit in pulledObjects)
+        {
+            if (hit == null)
+                continue;
             Vector3 center = transform.position;
             Vector3 pos = hit.transform.position;
 
