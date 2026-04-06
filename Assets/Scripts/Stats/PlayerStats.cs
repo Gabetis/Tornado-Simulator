@@ -52,6 +52,8 @@ public class PlayerStats
         Gold = Gold + amount * goldMultiplier;
         Debug.Log("Added " + amount * goldMultiplier + " gold. Total gold: " + Gold);
         Debug.Log("Current gold multiplier: " + goldMultiplier);
+
+        GameEvent.UpdateGoldText(Gold);
     }
 
     public void SpendGold(int amount)

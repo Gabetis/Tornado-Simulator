@@ -16,12 +16,6 @@ public class GoldDisplay : MonoBehaviour
             goldText = GetComponentInChildren<TextMeshProUGUI>();
         }
     }
-
-    private void Start()
-    {
-        UpdateText(PlayerManager.Instance.Stats.Gold);
-    }
-
     private void UpdateText(int goldAmount)
     {
         goldText.text = goldAmount.ToString();

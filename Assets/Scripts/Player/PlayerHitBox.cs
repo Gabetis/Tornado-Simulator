@@ -4,13 +4,13 @@ public class PlayerHitBox : MonoBehaviour
 {
     private PlayerManager playerManager;
 
-    private void Start()
+    private void Awake()
     {
         playerManager = GetComponentInParent<PlayerManager>();
     }
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.layer != 3)
+        if (collision.gameObject.layer == 7)
         {
             collision.gameObject.SetActive(false);
             playerManager.Stats.IncreaseCurrentSizeStore(1);

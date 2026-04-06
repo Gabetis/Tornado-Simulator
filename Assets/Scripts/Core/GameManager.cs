@@ -20,10 +20,4 @@ public class GameManager : MonoBehaviour
             playerManager = FindFirstObjectByType<PlayerManager>();
         }
     }
-
-    private void Start()
-    {
-        // Initialize player stats 
-        GameEvent.UpdateSizeText(playerManager.Stats.currentSizeStore, playerManager.Stats.maxSize);
-    }
 }

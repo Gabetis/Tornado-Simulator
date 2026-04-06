@@ -9,7 +9,7 @@ public class UpgradeButtonDisplay : MonoBehaviour
     {
         if (UpgradePanel == null)
         {
-            UpgradePanel = transform.parent.Find("UpgradePanel").gameObject;
+            UpgradePanel = transform.parent.Find("Upgrade Panel").gameObject;
         }
         if (upgradeButton == null)
         {
