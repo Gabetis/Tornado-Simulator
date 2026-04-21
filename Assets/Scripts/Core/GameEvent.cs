@@ -18,4 +18,7 @@ public static class GameEvent
     public static void UpdateMaxSizeText(int maxSize) => OnUpdateMaxSizeText?.Invoke(maxSize);
     public static Action<UpgradeType> OnUpdateUpgradeCostUI;
     public static void UpdateUpgradeCostUI(UpgradeType type) => OnUpdateUpgradeCostUI?.Invoke(type);
+
+    public static Action OnUpdateRealScale;
+    public static void UpdateRealScale() => OnUpdateRealScale?.Invoke();
 }

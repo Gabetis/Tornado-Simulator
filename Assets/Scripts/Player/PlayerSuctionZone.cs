@@ -1,8 +1,9 @@
 using UnityEngine;
 using System.Collections.Generic;
-public class PlayerHitBox : MonoBehaviour
+public class PlayerSuctionZone : MonoBehaviour
 {
-    private PlayerManager playerManager;
+    [SerializeField] private PlayerManager playerManager;
+    [SerializeField] private ObjectPooling objectPooling;
 
     private void Awake()
     {
@@ -12,11 +13,15 @@ public class PlayerHitBox : MonoBehaviour
     {
         if (collision.gameObject.layer == 7)
         {
-            collision.gameObject.SetActive(false);
             playerManager.Stats.IncreaseCurrentSizeStore(1);
-            playerManager.transform.localScale = Vector3.one * (1 + playerManager.Stats.sizeMultiplier * playerManager.Stats.currentSize); //Increase real size
+            GameEvent.UpdateRealScale();
             GameEvent.OnUpdateFill();
             GameEvent.UpdateSizeText(playerManager.Stats.currentSizeStore, playerManager.Stats.maxSize);
+            objectPooling = collision.gameObject.GetComponentInParent<ObjectPooling>();
+            if (objectPooling != null)
+                objectPooling.ReturnObject(collision.gameObject);
+            else
+                Debug.Log("Cant find ObjectPooling");
         }
     }
 

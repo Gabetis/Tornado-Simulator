@@ -24,7 +24,7 @@ public class UpgradeSystem : MonoBehaviour
                     playerManager.Stats.SetMaxSize(value);
 
                     GameEvent.UpdateGoldText(playerManager.Stats.Gold);
-                    GameEvent.  UpdateMaxSizeText(playerManager.Stats.maxSize);
+                    GameEvent.UpdateMaxSizeText(playerManager.Stats.maxSize);
                     GameEvent.UpdateUpgradeLevelUI(upgradeType);
                     GameEvent.UpdateUpgradeCostUI(upgradeType);
                 }

@@ -6,6 +6,11 @@ public class PlayerManager : MonoBehaviour
     public GameObject HitBox;
     public GameObject Movement;
     public PlayerStats Stats { get; private set; } = new PlayerStats();
+
+    private void OnEnable()
+    {
+        GameEvent.OnUpdateRealScale += UpdateRealScale;
+    }
     private void Awake()
     {
         if (Visual == null)
@@ -15,7 +20,7 @@ public class PlayerManager : MonoBehaviour
 
         if (HitBox == null)
         {
-            HitBox = transform.Find("HitBox").gameObject;
+            HitBox = transform.Find("SuctionZone").gameObject;
         }
 
         if(Movement == null)
@@ -34,4 +39,9 @@ public class PlayerManager : MonoBehaviour
         GameEvent.UpdateGoldText(Stats.Gold);
         GameEvent.UpdateSizeText(Stats.currentSizeStore, Stats.maxSize);
     }    
+
+    public void UpdateRealScale()
+    {
+        transform.localScale = Vector3.one * (1 + Stats.sizeMultiplier * Stats.currentSize); 
+    }
 }
