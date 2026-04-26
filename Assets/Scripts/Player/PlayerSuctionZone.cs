@@ -20,8 +20,6 @@ public class PlayerSuctionZone : MonoBehaviour
             objectPooling = collision.gameObject.GetComponentInParent<ObjectPooling>();
             if (objectPooling != null)
                 objectPooling.ReturnObject(collision.gameObject);
-            else
-                Debug.Log("Cant find ObjectPooling");
         }
     }
 
