@@ -8,7 +8,7 @@ public class ObjectPooling : MonoBehaviour
 
     private void Start()
     {
-        foreach (Transform child in this.transform)
+        foreach (Transform child in this.transform) 
         {
             GameObject obj = child.gameObject;
             originalTransforms[obj] = (obj.transform.position, obj.transform.rotation);
