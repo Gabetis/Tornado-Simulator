@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 7385449510353084415}
   - component: {fileID: 2316113111136020622}
   - component: {fileID: 684913486900810667}
+  - component: {fileID: -799118205097892929}
   m_Layer: 7
   m_Name: SM_Nature_Tree_07
   m_TagString: Untagged
@@ -191,6 +192,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.4777832, y: 5.444243, z: 2.1636562}
   m_Center: {x: -0.06513399, y: 2.6782906, z: -0.0049082637}
+--- !u!114 &-799118205097892929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7869393422360888645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: 09912038de85497419ec72acb054e442, type: 2}
 --- !u!1 &8271030738927670097
 GameObject:
   m_ObjectHideFlags: 0

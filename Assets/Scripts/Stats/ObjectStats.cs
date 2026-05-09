@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ObjectStats 
+public class ObjectData : MonoBehaviour
 {
-    public int Weight { get; private set; }
+    [SerializeField] private ObjectSO objectData;
 }

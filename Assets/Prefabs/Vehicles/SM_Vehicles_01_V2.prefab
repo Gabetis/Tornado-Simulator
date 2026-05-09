@@ -236,6 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2154636863360439335}
   - component: {fileID: 2265408978863841315}
+  - component: {fileID: -1311609407179434039}
   m_Layer: 7
   m_Name: SM_Vehicles_01_V2
   m_TagString: Untagged
@@ -284,6 +285,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9799609, y: 1.3859104, z: 5.1015573}
   m_Center: {x: -0.0033702843, y: 0.7090966, z: -0.01681709}
+--- !u!114 &-1311609407179434039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6207959241596702225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: ddfe49e84edfbb44b99d49b90614d150, type: 2}
 --- !u!1 &7217102668827510062
 GameObject:
   m_ObjectHideFlags: 0

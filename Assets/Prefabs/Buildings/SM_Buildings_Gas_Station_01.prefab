@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 2455176891299940806}
   - component: {fileID: 7234394497245926702}
   - component: {fileID: 798369341294049394}
+  - component: {fileID: 4228455418307709258}
   m_Layer: 7
   m_Name: SM_Buildings_Gas_Station_01
   m_TagString: Untagged
@@ -232,6 +233,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2225584924179927796, guid: 4d4befd8d8d249747902abb9d4f42095, type: 3}
+--- !u!114 &4228455418307709258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2253316359618538480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: 2d3bfa12f5d41f84cbd4d086458095cb, type: 2}
 --- !u!1 &5914165751047500323
 GameObject:
   m_ObjectHideFlags: 0

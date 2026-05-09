@@ -15,7 +15,7 @@ public class PlayerStats
 
     public void IncreaseCurrentSizeStore(int amount)
     {
-        if(currentSizeStore < maxSize)
+        if (currentSizeStore < maxSize)
         {
             currentSizeStore += amount;
             if (currentSizeStore > maxSize)
@@ -35,7 +35,7 @@ public class PlayerStats
     public void SetMaxSize(int newMaxSize)
     {
         maxSize = newMaxSize;
-    }   
+    }
 
     public void SetMoveSpeed(float newMoveSpeed)
     {
@@ -45,7 +45,7 @@ public class PlayerStats
     public void SetGoldMultiplier(int newGoldMultiplier)
     {
         goldMultiplier = newGoldMultiplier;
-    }   
+    }
 
     public void AddGold(int amount)
     {
@@ -66,5 +66,10 @@ public class PlayerStats
         {
             Debug.Log("Not enough gold to spend.");
         }
+    }
+
+    public float PlayerPower()
+    {
+        return Suction * Mathf.Pow(currentSize, 0.7f);
     }
 }

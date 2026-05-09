@@ -350,6 +350,7 @@ GameObject:
   - component: {fileID: 5169689563300870546}
   - component: {fileID: 4342349416746777826}
   - component: {fileID: 2247419984837153228}
+  - component: {fileID: 2654353215658231250}
   m_Layer: 7
   m_Name: SM_Buildings_Hospital_01
   m_TagString: Untagged
@@ -462,6 +463,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1824838052079322354, guid: 9f0fd1a929ef9ac42a323156ce484017, type: 3}
+--- !u!114 &2654353215658231250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4299695751281353088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: 873adb8c68b77c448951dace99ec356f, type: 2}
 --- !u!1 &4469114407286255102
 GameObject:
   m_ObjectHideFlags: 0

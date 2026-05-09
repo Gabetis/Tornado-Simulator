@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 1483340543885401421}
   - component: {fileID: 2148849172788661691}
   - component: {fileID: 4055843936940827107}
+  - component: {fileID: 5616185718001966115}
   m_Layer: 7
   m_Name: SM_Buildings_Supermarket_02
   m_TagString: Untagged
@@ -230,6 +231,19 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8293099687455065301, guid: 69b97236e1bb8fc42bdf5ca5b65d190a, type: 3}
+--- !u!114 &5616185718001966115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113023565702562432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: 87999ae8a18fafa41aba49d2f1089786, type: 2}
 --- !u!1 &7597069086389675670
 GameObject:
   m_ObjectHideFlags: 0

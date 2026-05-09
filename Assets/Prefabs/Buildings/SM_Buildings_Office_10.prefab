@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 7892781304517955339}
   - component: {fileID: 754379073500757382}
   - component: {fileID: 1546166733821151361}
+  - component: {fileID: 332453761961566164}
   m_Layer: 7
   m_Name: SM_Buildings_Office_10
   m_TagString: Untagged
@@ -453,3 +454,16 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1073290291933865955, guid: 847528fd9848cc546a7cd5c77a5c3eff, type: 3}
+--- !u!114 &332453761961566164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8485542154140555066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: 20675013bacc58543b070a0af1843ff9, type: 2}

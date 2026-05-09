@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1107019617668838634}
   - component: {fileID: 5679601092924330095}
   - component: {fileID: 4754629247612065709}
+  - component: {fileID: -3140357931347098684}
+  - component: {fileID: 3570722893019287741}
   m_Layer: 7
   m_Name: SM_Buildings_Gas_Station_02
   m_TagString: Untagged
@@ -114,3 +116,37 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -4827246301028552578, guid: 9d3b56977c32cbc4eb440457cb9f0a21, type: 3}
+--- !u!114 &-3140357931347098684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096166617327347445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: 0dabe30af70f78a4497b07b97bae64d7, type: 2}
+--- !u!65 &3570722893019287741
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096166617327347445}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 16.112764, y: 6.7316246, z: 7.8599644}
+  m_Center: {x: 0, y: 3.3658128, z: 3.6006098}

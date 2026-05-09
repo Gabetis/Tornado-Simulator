@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2089132678829877915}
   - component: {fileID: 3373507101726532910}
   - component: {fileID: 3530962050757627791}
+  - component: {fileID: 2431027016870258293}
   m_Layer: 0
   m_Name: SM_FloorProps_RoadSign_12
   m_TagString: Untagged
@@ -59,6 +60,11 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
@@ -80,9 +86,11 @@ MeshRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &3530962050757627791
 BoxCollider:
@@ -105,3 +113,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6081931, y: 2.6280866, z: 0.058605053}
   m_Center: {x: 0.00023844838, y: 1.3140433, z: -0.010282694}
+--- !u!114 &2431027016870258293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968210506225976920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: 82fc63ce6be99704bad598673333e7be, type: 2}

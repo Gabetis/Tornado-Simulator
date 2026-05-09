@@ -464,6 +464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6011911585454832549}
   - component: {fileID: 5124251748817793630}
+  - component: {fileID: -5401017218127421166}
   m_Layer: 7
   m_Name: SM_Vehicles_Ambulance
   m_TagString: Untagged
@@ -512,6 +513,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.4796984, y: 2.8228674, z: 5.322172}
   m_Center: {x: 0.016280413, y: 0.9114337, z: -0.026535273}
+--- !u!114 &-5401017218127421166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5875643780126015220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: 7047957bc24b48d4597aeea3587a9c10, type: 2}
 --- !u!1 &6219265614162604569
 GameObject:
   m_ObjectHideFlags: 0

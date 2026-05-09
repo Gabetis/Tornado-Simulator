@@ -30,4 +30,10 @@ public class PullSystem : MonoBehaviour
             return true;
         return false;
     }
+
+    // Acceptable SRP violation - too simple to justify a separate class
+    public float GetEXP(ObjectSO objectData, PlayerStats playerStats)
+    {
+        return objectData.baseEXP * Mathf.Pow(GetResistance(objectData) / playerStats.PlayerPower(), 0.7f);
+    }
 }

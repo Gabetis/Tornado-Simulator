@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 4626675425039585882}
   - component: {fileID: 4728865348600887710}
   - component: {fileID: 8211568376751395131}
+  - component: {fileID: 8521563320355628836}
   m_Layer: 7
   m_Name: SM_Props_Fountain_01
   m_TagString: Untagged
@@ -172,6 +173,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.342587, y: 2.58618, z: 4.342587}
   m_Center: {x: 0, y: 1.2930897, z: 0}
+--- !u!114 &8521563320355628836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103333236046797249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjectData
+  objectData: {fileID: 11400000, guid: 167d65a077c328e40ba3a41396151e60, type: 2}
 --- !u!1 &3772707654844423180
 GameObject:
   m_ObjectHideFlags: 0
