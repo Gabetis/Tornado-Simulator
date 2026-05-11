@@ -4,7 +4,7 @@ using UnityEngine;
 public class ObjectSO : ScriptableObject
 {
     public string nameObeject;
-    public int objectMass;
-    public int objectSize;
+    public float objectMass;
+    public float objectSize;
     public int baseEXP = 2; 
 }

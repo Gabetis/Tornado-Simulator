@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TMNho
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: TMNho
-  objectMass: 900
-  objectSize: 100
+  objectMass: 350
+  objectSize: 50
   baseEXP: 2

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DaiPhunNuoc
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: DaiPhunNuoc
-  objectMass: 600
-  objectSize: 90
+  objectMass: 300
+  objectSize: 45
   baseEXP: 2

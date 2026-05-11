@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TMLon
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: TMLon
-  objectMass: 1400
-  objectSize: 180
+  objectMass: 800
+  objectSize: 90
   baseEXP: 2

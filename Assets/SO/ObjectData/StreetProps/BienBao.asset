@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BienBao
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: BienBao
-  objectMass: 10
-  objectSize: 8
+  objectMass: 4
+  objectSize: 4
   baseEXP: 2

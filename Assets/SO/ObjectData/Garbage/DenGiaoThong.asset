@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DenGiaoThong
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: DenGiaoThong
-  objectMass: 40
-  objectSize: 18
+  objectMass: 15
+  objectSize: 8
   baseEXP: 2

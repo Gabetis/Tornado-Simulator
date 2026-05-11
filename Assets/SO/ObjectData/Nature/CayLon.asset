@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CayLon
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: CayLon
-  objectMass: 115
-  objectSize: 35
+  objectMass: 45
+  objectSize: 20
   baseEXP: 2

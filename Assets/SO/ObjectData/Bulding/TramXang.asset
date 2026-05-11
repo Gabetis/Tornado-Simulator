@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TramXang
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: TramXang
-  objectMass: 1200
-  objectSize: 160
+  objectMass: 600
+  objectSize: 80
   baseEXP: 2

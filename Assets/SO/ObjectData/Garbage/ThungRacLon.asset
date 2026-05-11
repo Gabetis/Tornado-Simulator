@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d58fd3aeee73f4aa176449f8f38d90, type: 3}
   m_Name: ThungRacLon
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
-  nameObeject: 
-  objectMass: 0
-  objectSize: 0
+  nameObeject: ThungRacLon
+  objectMass: 10
+  objectSize: 7
   baseEXP: 2

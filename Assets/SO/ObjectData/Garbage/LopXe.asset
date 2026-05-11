@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: LopXe
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: LopXe
-  objectMass: 12
-  objectSize: 10
+  objectMass: 5
+  objectSize: 5
   baseEXP: 2

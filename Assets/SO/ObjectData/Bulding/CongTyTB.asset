@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CongTyTB
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: CongTyTB
-  objectMass: 1500
-  objectSize: 180
+  objectMass: 750
+  objectSize: 90
   baseEXP: 2

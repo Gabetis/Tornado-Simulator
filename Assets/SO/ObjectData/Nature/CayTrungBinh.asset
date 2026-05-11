@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CayTrungBinh
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: CayTrungBinh
-  objectMass: 80
-  objectSize: 25
+  objectMass: 30
+  objectSize: 12
   baseEXP: 2

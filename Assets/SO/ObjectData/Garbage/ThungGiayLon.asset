@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ThungGiayLon
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: ThungGiayLon
-  objectMass: 2
-  objectSize: 4
+  objectMass: 1
+  objectSize: 2
   baseEXP: 2

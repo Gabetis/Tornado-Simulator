@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TramDungXeBuyt
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: TramDungXeBuyt
-  objectMass: 250
-  objectSize: 50
+  objectMass: 100
+  objectSize: 25
   baseEXP: 2

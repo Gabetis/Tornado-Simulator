@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: RacNho
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: RacNho
-  objectMass: 1
-  objectSize: 1
+  objectMass: 0.2
+  objectSize: 0.5
   baseEXP: 2

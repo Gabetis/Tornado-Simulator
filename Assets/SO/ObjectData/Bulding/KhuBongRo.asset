@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: KhuBongRo
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: KhuBongRo
-  objectMass: 400
-  objectSize: 70
+  objectMass: 180
+  objectSize: 35
   baseEXP: 2

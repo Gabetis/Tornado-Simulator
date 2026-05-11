@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1237943177674790485}
   - component: {fileID: 4785286128867552963}
   - component: {fileID: -3805172590404074658}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Props_Garbage_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,4 +126,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectData
-  objectData: {fileID: 11400000, guid: 33b692ea13c515141a2e085e09abe8fe, type: 2}
+  objectSO: {fileID: 11400000, guid: 5344e97c83964904dae82fd2505f59af, type: 2}

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: KhachSan
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: KhachSan
-  objectMass: 2000
-  objectSize: 220
+  objectMass: 1000
+  objectSize: 110
   baseEXP: 2

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MayBanHang
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: MayBanHang
-  objectMass: 150
-  objectSize: 35
+  objectMass: 60
+  objectSize: 18
   baseEXP: 2

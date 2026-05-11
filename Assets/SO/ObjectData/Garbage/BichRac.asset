@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BichRac
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: BichRac
-  objectMass: 1
-  objectSize: 2
+  objectMass: 0.5
+  objectSize: 1
   baseEXP: 2

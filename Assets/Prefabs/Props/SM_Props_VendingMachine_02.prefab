@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 876016553856074885}
   - component: {fileID: 4792810832362320380}
   - component: {fileID: 1071404034969663516}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Props_VendingMachine_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,4 +126,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectData
-  objectData: {fileID: 11400000, guid: 2083eacabe474aa44bbb9a1be5ba58e2, type: 2}
+  objectSO: {fileID: 11400000, guid: 2083eacabe474aa44bbb9a1be5ba58e2, type: 2}

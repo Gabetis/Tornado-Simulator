@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TMTrungBinh
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: TMTrungBinh
-  objectMass: 1100
-  objectSize: 140
+  objectMass: 550
+  objectSize: 70
   baseEXP: 2

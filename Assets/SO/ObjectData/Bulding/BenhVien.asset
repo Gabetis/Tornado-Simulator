@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BenhVien
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: BenhVien
-  objectMass: 3000
-  objectSize: 300
+  objectMass: 1600
+  objectSize: 150
   baseEXP: 2

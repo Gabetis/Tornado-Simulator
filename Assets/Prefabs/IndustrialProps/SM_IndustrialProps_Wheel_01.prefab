@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4456594697902082342}
   - component: {fileID: 4351732415405895832}
   - component: {fileID: -8281251629170819101}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_IndustrialProps_Wheel_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,4 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectData
-  objectData: {fileID: 11400000, guid: 1776ff8fb06bd654684f7845f417341e, type: 2}
+  objectSO: {fileID: 11400000, guid: 1776ff8fb06bd654684f7845f417341e, type: 2}

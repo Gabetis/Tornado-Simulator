@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: CuaHangTienLoi
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: CuaHangTienLoi
-  objectMass: 1600
-  objectSize: 180
+  objectMass: 450
+  objectSize: 60
   baseEXP: 2

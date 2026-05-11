@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: XeDap
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: XeDap
-  objectMass: 15
-  objectSize: 10
+  objectMass: 8
+  objectSize: 6
   baseEXP: 2

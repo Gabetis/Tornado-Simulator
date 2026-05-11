@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: TruCuuHoa
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: TruCuuHoa
-  objectMass: 30
-  objectSize: 10
+  objectMass: 12
+  objectSize: 5
   baseEXP: 2

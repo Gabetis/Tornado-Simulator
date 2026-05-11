@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5132160901013505577}
   - component: {fileID: 2398855209140244899}
   - component: {fileID: -7090714870098803139}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_FloorProps_BusStation_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -127,4 +127,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectData
-  objectData: {fileID: 11400000, guid: 11ae00c7a013b634aa8a1aaa22cee7c4, type: 2}
+  objectSO: {fileID: 11400000, guid: 11ae00c7a013b634aa8a1aaa22cee7c4, type: 2}

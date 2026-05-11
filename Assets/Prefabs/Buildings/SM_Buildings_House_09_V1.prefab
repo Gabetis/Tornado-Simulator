@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6903512292373165933}
   - component: {fileID: 8901440280448670070}
   - component: {fileID: 8140878047177242200}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_Buildings_House_09_V1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectData
-  objectData: {fileID: 11400000, guid: 22f05807ca772824993c1cc2b13b6c1b, type: 2}
+  objectSO: {fileID: 11400000, guid: 22f05807ca772824993c1cc2b13b6c1b, type: 2}
 --- !u!1 &6845951236509137522
 GameObject:
   m_ObjectHideFlags: 0

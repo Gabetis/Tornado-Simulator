@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ThungNhienLieu
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: ThungNhienLieu
-  objectMass: 140
-  objectSize: 32
+  objectMass: 55
+  objectSize: 16
   baseEXP: 2

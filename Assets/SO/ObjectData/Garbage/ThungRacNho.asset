@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: ThungRacNho
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: ThungRacNho
-  objectMass: 15
-  objectSize: 8
+  objectMass: 2
+  objectSize: 3
   baseEXP: 2

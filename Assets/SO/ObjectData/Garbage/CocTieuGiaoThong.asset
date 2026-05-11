@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56d58fd3aeee73f4aa176449f8f38d90, type: 3}
   m_Name: CocTieuGiaoThong
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
-  nameObeject: 
-  objectMass: 0
-  objectSize: 0
+  nameObeject: CocTieuGiaoThong
+  objectMass: 1
+  objectSize: 1.5
   baseEXP: 2

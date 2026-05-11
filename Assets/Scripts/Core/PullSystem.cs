@@ -4,36 +4,39 @@ public class PullSystem : MonoBehaviour
 {
     private float GetDistanceVector(Vector3 playerPos, Vector3 objectPos)
     {
-        Debug.Log("Distance: " + (objectPos - playerPos).magnitude);
         return (objectPos - playerPos).magnitude;
     }
 
     private float GetDrag(ObjectSO objectData)
     {
-        Debug.Log("Dtag: " + (1 + 0.3f * objectData.objectSize));
         return 1 + 0.3f * objectData.objectSize;
     }
 
-    private float GetSuctionForce(PlayerManager playerStats)
+    private float GetSuctionForce(PlayerManager playerStats, ObjectData objectData)
     {
-        return playerStats.Stats.Suction * Mathf.Pow(playerStats.Stats.currentSize, 1.5f) / Mathf.Pow(GetDistanceVector(playerStats.transform.position, transform.position), 1.2f);
+        Debug.Log(playerStats.Stats.Suction * Mathf.Pow(playerStats.Stats.currentSize, 1.5f) / Mathf.Pow(GetDistanceVector(playerStats.transform.position, objectData.transform.position), 1.2f));
+        return playerStats.Stats.Suction * Mathf.Pow(playerStats.Stats.currentSize, 1.5f) / Mathf.Pow(GetDistanceVector(playerStats.transform.position, objectData.transform.position), 1.2f);
     }
 
-    private float GetResistance(ObjectSO objectData)
+    private float GetResistance(ObjectSO objectSO)
     {
-        return objectData.objectMass * objectData.objectSize * GetDrag(objectData);
+        return objectSO.objectMass * GetDrag(objectSO);
     }
 
-    public bool ResultSuction(PlayerManager playerManager, ObjectSO objectData)
+    public bool GetResultSuction(PlayerManager playerManager, ObjectData objectData ,ObjectSO objectSO)
     {
-        if (GetSuctionForce(playerManager) >= GetResistance(objectData))
+        if (GetSuctionForce(playerManager, objectData) >= GetResistance(objectSO))
+        {
+            Debug.Log("Suction Force: " + GetSuctionForce(playerManager, objectData) + " | Resistance: " + GetResistance(objectSO));
             return true;
+        }
+        Debug.Log("Suction Force: " + GetSuctionForce(playerManager, objectData) + " | Resistance: " + GetResistance(objectSO));
         return false;
     }
 
     // Acceptable SRP violation - too simple to justify a separate class
-    public float GetEXP(ObjectSO objectData, PlayerStats playerStats)
+    public int GetEXP(ObjectSO objectData, PlayerStats playerStats)
     {
-        return objectData.baseEXP * Mathf.Pow(GetResistance(objectData) / playerStats.PlayerPower(), 0.7f);
+        return (int)(objectData.baseEXP * Mathf.Pow(GetResistance(objectData) / playerStats.PlayerPower(), 0.7f));
     }
 }

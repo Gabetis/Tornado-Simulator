@@ -4,6 +4,8 @@ public class PlayerSuctionZone : MonoBehaviour
 {
     [SerializeField] private PlayerManager playerManager;
     [SerializeField] private ObjectPooling objectPooling;
+    [SerializeField] private ObjectData objectData;
+    [SerializeField] private PullSystem pullSystem;
 
     private void Awake()
     {
@@ -13,10 +15,14 @@ public class PlayerSuctionZone : MonoBehaviour
     {
         if (collision.gameObject.layer == 7)
         {
-            playerManager.Stats.IncreaseCurrentSizeStore(1);
+            int EXP = pullSystem.GetEXP(collision.GetComponent<ObjectData>().objectSO, playerManager.Stats);
+            playerManager.Stats.IncreaseCurrentSizeStore(EXP);
+            Debug.Log("EXP Gained: " + pullSystem.GetEXP(collision.GetComponent<ObjectData>().objectSO, playerManager.Stats));
+
             GameEvent.UpdateRealScale();
             GameEvent.OnUpdateFill();
             GameEvent.UpdateSizeText(playerManager.Stats.currentSizeStore, playerManager.Stats.maxSize);
+
             objectPooling = collision.gameObject.GetComponentInParent<ObjectPooling>();
             if (objectPooling != null)
                 objectPooling.ReturnObject(collision.gameObject);
@@ -36,19 +42,24 @@ public class PlayerSuctionZone : MonoBehaviour
 
         foreach (var hit in hits)
         {
-            Vector3 center = transform.position;
-            Vector3 pos = hit.transform.position;
+            objectData = hit.GetComponent<ObjectData>();
 
-            Vector3 dir = (center - pos).normalized;
+            if (pullSystem.GetResultSuction(playerManager, objectData, objectData.objectSO) == true)
+            {
+                Vector3 center = transform.position;
+                Vector3 pos = hit.transform.position;
 
-            Vector3 tangent = Vector3.Cross(dir, Vector3.up).normalized;
+                Vector3 dir = (center - pos).normalized;
 
-            float distance = Vector3.Distance(pos, center);
-            float spin = Mathf.Clamp(1f / distance, 0.5f, 2f);
+                Vector3 tangent = Vector3.Cross(dir, Vector3.up).normalized;
 
-            Vector3 finalDir = (dir * 0.3f + tangent * spin).normalized;
+                float distance = Vector3.Distance(pos, center);
+                float spin = Mathf.Clamp(1f / distance, 0.5f, 2f);
 
-            hit.transform.position += finalDir * playerManager.Stats.Suction * Time.deltaTime;
+                Vector3 finalDir = (dir * 0.3f + tangent * spin).normalized;
+
+                hit.transform.position += finalDir * playerManager.Stats.Suction * Time.deltaTime;
+            }
         }
     }
 }

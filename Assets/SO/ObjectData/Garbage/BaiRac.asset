@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: BaiRac
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: BaiRac
-  objectMass: 3
-  objectSize: 4
+  objectMass: 2
+  objectSize: 2
   baseEXP: 2

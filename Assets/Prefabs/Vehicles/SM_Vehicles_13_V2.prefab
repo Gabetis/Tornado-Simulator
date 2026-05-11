@@ -398,8 +398,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.1506934, y: 2.1231203, z: 4.6460905}
-  m_Center: {x: -0.034923546, y: 0.56156003, z: 0.1305866}
+  m_Size: {x: 2.1506934, y: 1.6422408, z: 4.6460905}
+  m_Center: {x: -0.034923546, y: 0.8019997, z: 0.1305866}
 --- !u!114 &-7047908621322985484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectData
-  objectData: {fileID: 11400000, guid: 84aaa1dc5efc49d4bb787521fecd95b6, type: 2}
+  objectSO: {fileID: 11400000, guid: ddfe49e84edfbb44b99d49b90614d150, type: 2}
 --- !u!1 &3022558494367425438
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Xe4BanhTrungBinh
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: Xe4BanhTrungBinh
-  objectMass: 120
-  objectSize: 30
+  objectMass: 45
+  objectSize: 15
   baseEXP: 2

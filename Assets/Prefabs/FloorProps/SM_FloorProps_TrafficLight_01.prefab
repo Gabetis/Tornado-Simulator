@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8720982452142235695}
   - component: {fileID: 2305029190852276506}
   - component: {fileID: -236558966474449972}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SM_FloorProps_TrafficLight_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,4 +132,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e6ff97664471d145b5d4ba3f72efffc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectData
-  objectData: {fileID: 11400000, guid: 00b029f2df0384c499c840d53c906ab5, type: 2}
+  objectSO: {fileID: 11400000, guid: 00b029f2df0384c499c840d53c906ab5, type: 2}

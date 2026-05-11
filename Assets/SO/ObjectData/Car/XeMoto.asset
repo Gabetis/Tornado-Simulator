@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: XeMoto
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: XeMoto
-  objectMass: 20
-  objectSize: 12
+  objectMass: 12
+  objectSize: 8
   baseEXP: 2

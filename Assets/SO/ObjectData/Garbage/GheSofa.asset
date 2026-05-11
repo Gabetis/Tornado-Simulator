@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: GheSofa
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: GheSofa
-  objectMass: 90
-  objectSize: 28
+  objectMass: 35
+  objectSize: 14
   baseEXP: 2
