@@ -61,7 +61,7 @@ public class PlayerCamera : MonoBehaviour
             }
         }
 
-        // Rotate with one finger on the right half of the screens
+        // Rotate with one finger on the right half of the screens  
         for (int i = 0; i < Input.touchCount; i++)
         {
             Touch touch = Input.GetTouch(i);

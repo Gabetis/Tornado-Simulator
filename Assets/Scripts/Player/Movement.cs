@@ -35,6 +35,6 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = new Vector3(movement.x * speed, rb.linearVelocity.y, movement.z * speed);
+        rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
     }
 }
