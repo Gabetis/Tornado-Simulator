@@ -7173,6 +7173,10 @@ MonoBehaviour:
   playerTransform: {fileID: 1222625191}
   offset: {x: 0, y: 5, z: -6}
   offsetRotation: {x: 35, y: 0, z: 0}
+  touchSensitivity: 0.2
+  zoomSensitivity: 0.05
+  minZoom: 1
+  maxZoom: 7
 --- !u!114 &409585989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21328,10 +21332,6 @@ PrefabInstance:
     - target: {fileID: 7369040223306893990, guid: a6875f112ec734b438061e73adb9fb77, type: 3}
       propertyPath: m_Name
       value: SM_Nature_Tree_05 (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7369040223306893990, guid: a6875f112ec734b438061e73adb9fb77, type: 3}
-      propertyPath: m_Layer
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7858719394178109468, guid: a6875f112ec734b438061e73adb9fb77, type: 3}
       propertyPath: m_LocalPosition.x

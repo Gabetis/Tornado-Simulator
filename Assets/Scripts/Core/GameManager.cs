@@ -20,4 +20,9 @@ public class GameManager : MonoBehaviour
             playerManager = FindFirstObjectByType<PlayerManager>();
         }
     }
+
+    private void Start()
+    {
+        Screen.orientation = ScreenOrientation.LandscapeLeft;
+    }
 }
