@@ -10,16 +10,17 @@ public class UIManager : MonoBehaviour
 
     private void Awake()
     {
-        if(Instance != null && Instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
         Instance = this;
+        DontDestroyOnLoad(gameObject);
 
         if (sizeStoreBar == null)
         {
-            sizeStoreBar = transform.Find("Size Store Bar").GetComponent<SizeStoreBar>(); 
+            sizeStoreBar = transform.Find("Size Store Bar").GetComponent<SizeStoreBar>();
         }
         if (sellButton == null)
         {

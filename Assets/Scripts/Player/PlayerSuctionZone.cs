@@ -22,6 +22,7 @@ public class PlayerSuctionZone : MonoBehaviour
             GameEvent.UpdateRealScale();
             GameEvent.OnUpdateFill();
             GameEvent.UpdateSizeText(playerManager.Stats.currentSizeStore, playerManager.Stats.maxSize);
+            GameEvent.RequestSound(SoundEvent.Suction);
 
             objectPooling = collision.gameObject.GetComponentInParent<ObjectPooling>();
             if (objectPooling != null)

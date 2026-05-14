@@ -29,5 +29,6 @@ public class SellButton : MonoBehaviour
         GameEvent.UpdateGoldText(playerManager.Stats.Gold);
         GameEvent.ResetFill();
         GameEvent.ResetSizeText();
+        GameEvent.RequestSound(SoundEvent.Sell);
     }
 }
