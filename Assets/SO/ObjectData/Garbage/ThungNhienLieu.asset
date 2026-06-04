@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: ThungNhienLieu
   objectMass: 55
-  objectSize: 16
+  objectSize: 5
   baseEXP: 2

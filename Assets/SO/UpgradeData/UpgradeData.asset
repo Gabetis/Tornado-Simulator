@@ -12,23 +12,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6982f43e4c3189142aa516290409bf61, type: 3}
   m_Name: UpgradeData
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeData
-  baseMaxSize: 100
+  baseMaxSize: 10
   maxSizeCoefficient: 1.22
-  baseMaxSizeCost: 100
-  maxSizeCoefficientCost: 1.2
-  baseGoldMultiplierCost: 100
+  baseMaxSizeCost: 30
+  maxSizeCoefficientCost: 2
+  baseGoldMultiplierCost: 30
   goldMultiplierCoefficientCost: 1.45
   goldMultiplier: 1.3
   baseGoldMultiplier: 1
   goldMultiplierAmplitude: 0.3
   goldMultiplierCurve: 0.95
-  baseMoveSpeedCost: 100
+  baseMoveSpeedCost: 30
   moveSpeedCoefficientCost: 1.38
   moveSpeedMultiplier: 1.1
-  baseMoveSpeed: 1
+  baseMoveSpeed: 3
   baseMoveSpeedMultiplier: 1
   moveSpeedAmplitude: 0.06
-  maxMoveSpeed: 5
+  maxMoveSpeed: 10
   baseSizeMultiplierCost: 100
   sizeMultiplierCoefficientCost: 1.45
   sizeMultiplier: 1.25

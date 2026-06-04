@@ -2,31 +2,35 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    public GameObject Visual;
     public GameObject HitBox;
     public GameObject Movement;
+    public GameObject VFX;
+    public GameObject Tornado;
     public PlayerStats Stats { get; private set; } = new PlayerStats();
 
-    private void OnEnable()
-    {
-        GameEvent.OnUpdateRealScale += UpdateRealScale;
-    }
     private void Awake()
     {
-        if (Visual == null)
-        {
-            Visual = transform.Find("Visual").gameObject;
-        }
-
         if (HitBox == null)
         {
             HitBox = transform.Find("SuctionZone").gameObject;
         }
 
-        if(Movement == null)
+        if (Movement == null)
         {
             Movement = transform.Find("Movement").gameObject;
         }
+
+        if (VFX == null)
+        {
+            VFX = transform.Find("VFX").gameObject;
+        }
+
+        if (Tornado == null)
+        {
+            Tornado = VFX.transform .Find("Tornado").gameObject;
+        }
+
+        Stats.LoadFromPrefs();
     }
 
     private void Start()
@@ -36,12 +40,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Init()
     {
-        GameEvent.UpdateGoldText(Stats.Gold);
-        GameEvent.UpdateSizeText(Stats.currentSizeStore, Stats.maxSize);
-    }    
-
-    public void UpdateRealScale()
-    {
-        transform.localScale = Vector3.one * (1 + Stats.sizeMultiplier * Stats.currentSize); 
+        GameEvent.UpdateGoldText((int)Stats.Gold);
+        GameEvent.UpdateSizeText((int)Stats.currentSizeStore, Stats.maxSize);
     }
 }

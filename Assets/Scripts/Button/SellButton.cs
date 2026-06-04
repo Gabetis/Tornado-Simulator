@@ -24,11 +24,12 @@ public class SellButton : MonoBehaviour
 
     private void OnSellButtonClicked()
     {
-        playerManager.Stats.AddGold(playerManager.Stats.currentSizeStore);
+        playerManager.Stats.AddGold((int)playerManager.Stats.currentSizeStore);
         playerManager.transform.localScale = Vector3.one;
-        GameEvent.UpdateGoldText(playerManager.Stats.Gold);
+        GameEvent.UpdateGoldText((int)playerManager.Stats.Gold);
         GameEvent.ResetFill();
         GameEvent.ResetSizeText();
         GameEvent.RequestSound(SoundEvent.Sell);
+        GameEvent.UpdateRealScale();
     }
 }

@@ -1,5 +1,6 @@
-using UnityEngine;
+using System;
 using System.Collections.Generic;
+using UnityEngine;
 public class PlayerSuctionZone : MonoBehaviour
 {
     [SerializeField] private PlayerManager playerManager;
@@ -13,15 +14,19 @@ public class PlayerSuctionZone : MonoBehaviour
     }
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.layer == 7)
+        if (collision.gameObject.layer == 7) // 7 is PullAble layer
         {
-            int EXP = pullSystem.GetEXP(collision.GetComponent<ObjectData>().objectSO, playerManager.Stats);
+            if (pullSystem.GetResultSuction(playerManager, collision.GetComponent<ObjectData>(), collision.GetComponent<ObjectData>().objectSO) == false)
+            {
+                return;
+            }
+
+            float EXP = pullSystem.GetEXP(collision.GetComponent<ObjectData>().objectSO, playerManager.Stats);
             playerManager.Stats.IncreaseCurrentSizeStore(EXP);
-            Debug.Log("EXP Gained: " + pullSystem.GetEXP(collision.GetComponent<ObjectData>().objectSO, playerManager.Stats));
 
             GameEvent.UpdateRealScale();
             GameEvent.OnUpdateFill();
-            GameEvent.UpdateSizeText(playerManager.Stats.currentSizeStore, playerManager.Stats.maxSize);
+            GameEvent.UpdateSizeText((int)playerManager.Stats.currentSizeStore, playerManager.Stats.maxSize);
             GameEvent.RequestSound(SoundEvent.Suction);
 
             objectPooling = collision.gameObject.GetComponentInParent<ObjectPooling>();

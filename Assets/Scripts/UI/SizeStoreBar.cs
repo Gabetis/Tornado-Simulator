@@ -18,6 +18,9 @@ public class SizeStoreBar : MonoBehaviour
         {
             sizeBarFill = transform.Find("BG/Fill").GetComponent<Image>();
         }
+
+        Debug.Log("this");
+        GetCurrentFill();
     }
 
     private void GetCurrentFill()
@@ -35,5 +38,6 @@ public class SizeStoreBar : MonoBehaviour
     private void OnDisable()
     {
         GameEvent.OnUpdateFill -= GetCurrentFill;
+        GameEvent.OnResetFill -= ResetFill;
     }
 }

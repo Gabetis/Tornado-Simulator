@@ -22,6 +22,9 @@ public static class GameEvent
     public static Action OnUpdateRealScale;
     public static void UpdateRealScale() => OnUpdateRealScale?.Invoke();
 
+    public static Action OnUpdateMaxScale;
+    public static void UpdateMaxScale() => OnUpdateMaxScale?.Invoke();
+
     public static Action<SoundEvent> OnSoundRequest;
     public static void RequestSound(SoundEvent sound) => OnSoundRequest?.Invoke(sound);
 }

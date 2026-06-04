@@ -4,7 +4,7 @@ using UnityEngine;
 public class UpgradeSO : ScriptableObject
 {
     [Header("MaxSize")]
-    public int baseMaxSize = 100;
+    public int baseMaxSize = 10;
     public float maxSizeCoefficient = 1.22f;
     public int baseMaxSizeCost = 100;
     public float maxSizeCoefficientCost = 1.2f;
@@ -22,11 +22,11 @@ public class UpgradeSO : ScriptableObject
     public int baseMoveSpeedCost = 100;
     public float moveSpeedCoefficientCost = 1.38f;
     public float moveSpeedMultiplier = 1.1f;
-    public int baseMoveSpeed = 1;
+    public int baseMoveSpeed = 3;
 
     public int baseMoveSpeedMultiplier = 1;
     public float moveSpeedAmplitude = 0.06f;
-    public int maxMoveSpeed = 5;
+    public int maxMoveSpeed = 10;
 
     [Header("SizeMultiplier")]
     public int baseSizeMultiplierCost = 100;

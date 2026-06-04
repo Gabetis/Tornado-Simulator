@@ -9,6 +9,20 @@ public class UpgradeSystem : MonoBehaviour
     [SerializeField] private int goldMultiplierLevel = 0;
     [SerializeField] private int moveSpeedLevel = 0;
 
+    private void Start()
+    {
+        maxSizeLevel = PlayerPrefs.GetInt("MaxSizeLevel", 0);
+        goldMultiplierLevel = PlayerPrefs.GetInt("GoldMultiplierLevel", 0);
+        moveSpeedLevel = PlayerPrefs.GetInt("MoveSpeedLevel", 0);
+        // Apply saved upgrades
+        playerManager.Stats.SetMaxSize(upgradeData.GetMaxSizeValue(maxSizeLevel));
+        playerManager.Stats.SetGoldMultiplier(upgradeData.GetGoldMultiplierValue(goldMultiplierLevel));
+        playerManager.Stats.SetMoveSpeed(upgradeData.GetMoveSpeedValue(moveSpeedLevel));
+        GameEvent.UpdateUpgradeLevelUI(UpgradeType.MaxSize);
+        GameEvent.UpdateUpgradeLevelUI(UpgradeType.GoldMultiplier);
+        GameEvent.UpdateUpgradeLevelUI(UpgradeType.MoveSpeed);
+    }
+
     public void Upgrade(UpgradeType upgradeType)
     {
         switch (upgradeType)
@@ -23,10 +37,14 @@ public class UpgradeSystem : MonoBehaviour
                     int value = upgradeData.GetMaxSizeValue(maxSizeLevel);
                     playerManager.Stats.SetMaxSize(value);
 
-                    GameEvent.UpdateGoldText(playerManager.Stats.Gold);
+                    GameEvent.UpdateGoldText((int)playerManager.Stats.Gold);
                     GameEvent.UpdateMaxSizeText(playerManager.Stats.maxSize);
                     GameEvent.UpdateUpgradeLevelUI(upgradeType);
                     GameEvent.UpdateUpgradeCostUI(upgradeType);
+                    GameEvent.UpdateMaxScale();
+                    GameEvent.UpdateFill();
+                    PlayerPrefs.SetInt("MaxSizeLevel", maxSizeLevel);
+                    PlayerPrefs.SetInt("MaxSizeCost", maxSizeCost);
                 }
                 else
                 {
@@ -43,10 +61,12 @@ public class UpgradeSystem : MonoBehaviour
                     float value = upgradeData.GetMoveSpeedValue(moveSpeedLevel);
                     playerManager.Stats.SetMoveSpeed(value);
 
-                    GameEvent.UpdateGoldText(playerManager.Stats.Gold);
+                    GameEvent.UpdateGoldText((int)playerManager.Stats.Gold);
                     GameEvent.UpdateUpgradeLevelUI(upgradeType);
                     GameEvent.UpdateUpgradeCostUI(upgradeType);
                     Debug.Log("Move Speed upgraded to level " + moveSpeedLevel + " with value " + value);
+                    PlayerPrefs.SetInt("MoveSpeedLevel", moveSpeedLevel);
+                    PlayerPrefs.SetInt("MoveSpeedCost", moveSpeedCost);
                 }
                 else
                 {
@@ -61,13 +81,15 @@ public class UpgradeSystem : MonoBehaviour
                     playerManager.Stats.SpendGold(goldMultiplierCost);
                     goldMultiplierLevel++;
 
-                    int value = Mathf.RoundToInt(upgradeData.GetGoldMultiplierValue(goldMultiplierLevel));
+                    float value = upgradeData.GetGoldMultiplierValue(goldMultiplierLevel);
                     playerManager.Stats.SetGoldMultiplier(value);
 
-                    GameEvent.UpdateGoldText(playerManager.Stats.Gold);
+                    GameEvent.UpdateGoldText((int)playerManager.Stats.Gold);
                     GameEvent.UpdateUpgradeLevelUI(upgradeType);
                     GameEvent.UpdateUpgradeCostUI(upgradeType);
                     Debug.Log("Gold Multiplier upgraded to level " + goldMultiplierLevel + " with value " + value);
+                    PlayerPrefs.SetInt("GoldMultiplierLevel", goldMultiplierLevel);
+                    PlayerPrefs.SetInt("GoldltiplierCost", goldMultiplierCost);
                 }
                 else
                 {

@@ -13,6 +13,11 @@ public class ShowLevelUpgradeUI : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        ShowUI(upgradeType);
+    }
+
     private void OnEnable()
     {
         GameEvent.OnUpdateUpgradeLevelUI += ShowUI;

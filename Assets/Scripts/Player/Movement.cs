@@ -2,10 +2,18 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float speed = 5f;
     private Vector3 movement;
     [SerializeField] private Rigidbody rb;
     [SerializeField] private FixedJoystick joystick;
+    [SerializeField] private PlayerManager playerManager;
+
+    private void Awake()
+    {
+        if(playerManager == null)
+        {
+            playerManager = GetComponentInParent<PlayerManager>();
+        }
+    }
     void Start()
     {
         rb = GetComponentInParent<Rigidbody>();
@@ -35,6 +43,7 @@ public class Movement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement * speed * Time.deltaTime);
+        var movespeed = playerManager.Stats.currentMoveSpeed;
+        rb.MovePosition(rb.position + movement * movespeed * Time.deltaTime);
     }
 }

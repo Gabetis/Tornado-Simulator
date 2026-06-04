@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: RaoChan
   m_EditorClassIdentifier: Assembly-CSharp::ObjectSO
   nameObeject: RaoChan
-  objectMass: 25
-  objectSize: 13
+  objectMass: 5
+  objectSize: 5
   baseEXP: 2
