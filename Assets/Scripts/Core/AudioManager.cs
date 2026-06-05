@@ -4,6 +4,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance { get; private set; }
     [SerializeField] private AudioSource SFXSource;
+    [SerializeField] private AudioSource BGMSource;
     [SerializeField] private AudioClip[] SFXClip = new AudioClip[0];
 
     private void OnEnable()
@@ -28,6 +29,18 @@ public class AudioManager : MonoBehaviour
             case SoundEvent.Sell: SFXSource.PlayOneShot(SFXClip[0]); break;
             case SoundEvent.Suction: SFXSource.PlayOneShot(SFXClip[1]); break;
         }
+    }
+
+    public float SetSFXVolume(float value)
+    {
+        SFXSource.volume = value;
+        return value;
+    }
+
+    public float SetBGMVolume(float value)
+    {
+        BGMSource.volume = value;
+        return value;
     }
 
     private void OnDisable()
