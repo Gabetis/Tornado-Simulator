@@ -23,5 +23,6 @@ public class UpgradeButton : MonoBehaviour
     public void OnButtonClicked()
     {
         upgradeSystem.Upgrade(upgradeType);
+        GameEvent.OnSoundRequest(SoundEvent.Upgrade);
     }
 }

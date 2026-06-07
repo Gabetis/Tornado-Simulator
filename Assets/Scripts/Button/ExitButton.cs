@@ -26,5 +26,6 @@ public class ExitButton : MonoBehaviour
         {
             previousPanel.SetActive(true);
         }
+        GameEvent.OnSoundRequest(SoundEvent.Click);
     }
 }

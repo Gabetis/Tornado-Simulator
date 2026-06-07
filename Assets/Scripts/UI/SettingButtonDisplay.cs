@@ -26,5 +26,6 @@ public class SettingButtonDisplay : MonoBehaviour
     { 
         settingPanel.SetActive(true);
         this.gameObject.SetActive(false);
+        GameEvent.OnSoundRequest(SoundEvent.Click);
     }
 }

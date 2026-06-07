@@ -26,5 +26,6 @@ public class UpgradeButtonDisplay : MonoBehaviour
     { 
         upgradePanel.SetActive(true);
         this.gameObject.SetActive(false);
+        GameEvent.OnSoundRequest(SoundEvent.Click);
     }
 }
