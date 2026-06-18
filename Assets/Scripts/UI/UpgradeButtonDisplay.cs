@@ -2,14 +2,14 @@ using UnityEngine;
 using UnityEngine.UI;
 public class UpgradeButtonDisplay : MonoBehaviour
 {
-    [SerializeField] private GameObject UpgradePanel;
+    [SerializeField] private GameObject upgradePanel;
     [SerializeField] private Button upgradeButton;
 
     private void Awake()
     {
-        if (UpgradePanel == null)
+        if (upgradePanel == null)
         {
-            UpgradePanel = transform.parent.Find("Upgrade Panel").gameObject;
+            upgradePanel = transform.parent.Find("Upgrade Panel").gameObject;
         }
         if (upgradeButton == null)
         {
@@ -24,7 +24,8 @@ public class UpgradeButtonDisplay : MonoBehaviour
 
     private void OnClick()
     { 
-        UpgradePanel.SetActive(true);
+        upgradePanel.SetActive(true);
         this.gameObject.SetActive(false);
+        GameEvent.OnSoundRequest(SoundEvent.Click);
     }
 }
