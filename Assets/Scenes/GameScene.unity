@@ -43170,9 +43170,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   SFXSource: {fileID: 597606241}
   BGMSource: {fileID: 1215033037}
+  BGMClip:
+  - {fileID: 8300000, guid: 7187ea92be3399c49bf9e4ec60c1de7d, type: 3}
+  - {fileID: 8300000, guid: 6174eeae46f37b34e80316a6a8cc434f, type: 3}
   SFXClip:
   - {fileID: 8300000, guid: 6e1a33df9c919dd40bdccdbdd085663c, type: 3}
   - {fileID: 8300000, guid: b033f79c5f3be404f87358aa1e1bfc5d, type: 3}
+  - {fileID: 8300000, guid: 0b6de489383c3ed48bc3f14d73792e3e, type: 3}
+  - {fileID: 8300000, guid: cccfff8a428580947b71f87c02a43172, type: 3}
 --- !u!1 &1456280742
 GameObject:
   m_ObjectHideFlags: 0
