@@ -7,10 +7,6 @@ public class SettingButtonDisplay : MonoBehaviour
 
     private void Awake()
     {
-        if (settingPanel == null)
-        {
-            settingPanel = transform.parent.Find("Setting Panel").gameObject;
-        }
         if (settingButton == null)
         {
             settingButton = GetComponentInChildren<Button>();

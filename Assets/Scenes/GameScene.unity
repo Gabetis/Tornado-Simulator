@@ -1868,6 +1868,14 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1974196773}
+  - {fileID: 1486000982}
+  - {fileID: 1234452325}
+  - {fileID: 584506473}
+  - {fileID: 2147363172}
+  - {fileID: 1683475902}
+  - {fileID: 1746674273}
+  - {fileID: 1344860555}
+  - {fileID: 418159563}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -9958,7 +9966,7 @@ RectTransform:
   - {fileID: 268356972}
   - {fileID: 200856790}
   - {fileID: 487952442}
-  m_Father: {fileID: 1974196773}
+  m_Father: {fileID: 77325405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18433,13 +18441,13 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1501508908}
-  m_Father: {fileID: 1974196773}
+  m_Father: {fileID: 77325405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -164.00003}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 9.999939}
   m_SizeDelta: {x: 503, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &584506474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34502,13 +34510,13 @@ RectTransform:
   - {fileID: 1505106230}
   - {fileID: 1776458015}
   - {fileID: 1937682115}
-  m_Father: {fileID: 1974196773}
+  m_Father: {fileID: 77325405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -103}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 76}
   m_SizeDelta: {x: 500, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1234452326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36346,7 +36354,7 @@ RectTransform:
   - {fileID: 36246087}
   - {fileID: 2095908524}
   - {fileID: 55256851}
-  m_Father: {fileID: 1974196773}
+  m_Father: {fileID: 77325405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -43970,7 +43978,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1974196773}
+    m_TransformParent: {fileID: 77325405}
     m_Modifications:
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_Pivot.x
@@ -44034,11 +44042,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -273
+      value: 76.99997
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -49.47371
+      value: 89.999985
       objectReference: {fileID: 0}
     - target: {fileID: 2929252283123773938, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -48421,13 +48429,13 @@ RectTransform:
   - {fileID: 889326716}
   - {fileID: 203668317}
   - {fileID: 1197575679}
-  m_Father: {fileID: 1974196773}
+  m_Father: {fileID: 77325405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 145}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -19}
   m_SizeDelta: {x: 50, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1683475903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -48440,7 +48448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d75c844deda523247bacc3c745a65d01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UpgradeButtonDisplay
-  upgradePanel: {fileID: 0}
+  upgradePanel: {fileID: 1344860554}
   upgradeButton: {fileID: 0}
 --- !u!1001 &1685538295
 PrefabInstance:
@@ -49773,7 +49781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df2566a68177c6d46ad8d9c742c8f313, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SettingButtonDisplay
-  settingPanel: {fileID: 0}
+  settingPanel: {fileID: 418159562}
   settingButton: {fileID: 0}
 --- !u!224 &1746674273
 RectTransform:
@@ -49790,13 +49798,13 @@ RectTransform:
   - {fileID: 654948909}
   - {fileID: 1050329142}
   - {fileID: 292248659}
-  m_Father: {fileID: 1974196773}
+  m_Father: {fileID: 77325405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 69, y: 144.99998}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 68.99999, y: -19}
   m_SizeDelta: {x: 50, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &1762581456
 GameObject:
   m_ObjectHideFlags: 0
@@ -53793,15 +53801,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1486000982}
-  - {fileID: 1234452325}
-  - {fileID: 584506473}
-  - {fileID: 2147363172}
-  - {fileID: 1683475902}
-  - {fileID: 1746674273}
-  - {fileID: 1344860555}
-  - {fileID: 418159563}
+  m_Children: []
   m_Father: {fileID: 77325405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -53821,10 +53821,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6fdd6edd08513f489b8545f4d5238a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  sizeStoreBar: {fileID: 0}
-  sellButton: {fileID: 0}
-  goldDisplay: {fileID: 0}
-  upgradeButtonDisplay: {fileID: 0}
+  sizeStoreBar: {fileID: 1234452326}
+  sellButton: {fileID: 584506477}
+  goldDisplay: {fileID: 2147363173}
+  upgradeButtonDisplay: {fileID: 1683475903}
 --- !u!1001 &1978596246
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56884,13 +56884,13 @@ RectTransform:
   m_Children:
   - {fileID: 1015020006}
   - {fileID: 1493617311}
-  m_Father: {fileID: 1974196773}
+  m_Father: {fileID: 77325405}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -300, y: 0}
   m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &2147363173
 MonoBehaviour:
   m_ObjectHideFlags: 0
